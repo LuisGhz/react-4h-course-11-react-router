@@ -1,25 +1,25 @@
-import { NavBar, Collapse, Nav, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Navbar, Nav, NavItem, NavLink } from 'reactstrap';
 
 const MainNavBar = () => {
   return (
     <div>
-      <NavBar>
-        <Collapse>
-          <Nav>
+      <Navbar color="light" light expand="md">
+        <Collapse navbar>
+          <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/" >Home</NavLink>
+              <NavLink href="/">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/about" >About</NavLink>
+              <NavLink href="/about">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/contact" >Contact</NavLink>
+              <NavLink href="/contact">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
-      </NavBar>
+      </Navbar>
     </div>
-  )
+  );
 }
 
 export default MainNavBar;
