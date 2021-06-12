@@ -9,6 +9,12 @@ const MainNavBar = () => {
             <NavItem>
               <NavLink href="#" >Home</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="#" >About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#" >Contact</NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </NavBar>
