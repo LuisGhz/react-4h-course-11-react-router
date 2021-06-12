@@ -1,7 +1,8 @@
 import { Navbar, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
-const MainNavBar = () => {
+const MainNavBar = props => {
+  console.log(props);
   return (
     <div>
       <Navbar bg="dark" expand="md">
@@ -17,4 +18,4 @@ const MainNavBar = () => {
   );
 }
 
-export default MainNavBar;
+export default withRouter(MainNavBar);
