@@ -7,13 +7,13 @@ const MainNavBar = () => {
         <Collapse>
           <Nav>
             <NavItem>
-              <NavLink href="#" >Home</NavLink>
+              <NavLink href="/" >Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#" >About</NavLink>
+              <NavLink href="/about" >About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#" >Contact</NavLink>
+              <NavLink href="/contact" >Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
