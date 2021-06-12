@@ -3,6 +3,9 @@ import { Link, withRouter } from 'react-router-dom';
 
 const MainNavBar = props => {
   console.log(props);
+  setTimeout(() => {
+    props.history.push('/about');
+  }, 2000);
   return (
     <div>
       <Navbar bg="dark" expand="md">
