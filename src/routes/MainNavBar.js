@@ -1,11 +1,15 @@
+import { useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link, withRouter } from 'react-router-dom';
 
 const MainNavBar = props => {
   console.log(props);
-  setTimeout(() => {
-    props.history.push('/about');
-  }, 2000);
+  useEffect(() => {
+    setTimeout(() => {
+      props.history.push('/about');
+    }, 2000);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <div>
       <Navbar bg="dark" expand="md">
