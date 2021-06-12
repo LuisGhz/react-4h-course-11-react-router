@@ -1,9 +1,18 @@
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from 'routes/Home';
+import About from 'routes/About';
+import Contact from 'routes/Contact';
+import MainNavBar from 'routes/MainNavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Home />
+    <Router>
+      <MainNavBar />
+      <Route path="/" component={ Home } />
+      <Route path="/about" component={ About } />
+      <Route path="/contact" component={ Contact } />
+    </Router>
   );
 }
 
