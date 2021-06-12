@@ -3,7 +3,7 @@ import { Collapse, Navbar, Nav, NavItem, NavLink } from 'reactstrap';
 const MainNavBar = () => {
   return (
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar color="dark" dark expand="md">
         <Collapse navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
