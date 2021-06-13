@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 import { Link, withRouter } from 'react-router-dom';
 
 const MainNavBar = props => {
@@ -12,12 +12,15 @@ const MainNavBar = props => {
   }, []);
   return (
     <div>
-      <Navbar bg="dark" expand="md">
+      <Navbar bg="dark" variant="dark" expand="lg">
         <Navbar.Collapse>
-          <Nav className="me-auto">
+          <Nav className="mr-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav><Button variant="primary" >Login</Button></Nav>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
