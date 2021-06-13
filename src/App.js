@@ -4,6 +4,7 @@ import About from 'routes/About';
 import Contact from 'routes/Contact';
 import Post from 'routes/Post';
 import PageNotFound from 'routes/PageNotFound';
+import ProtectedRoute from 'routes/ProtectedRoute';
 import MainNavBar from 'routes/MainNavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -13,9 +14,9 @@ function App() {
       <MainNavBar />
       <Switch>
         <Route exact path="/" component={ Home } />
-        <Route path="/about" component={ About } />
-        <Route path="/contact" component={ Contact } />
-        <Route path="/post/:post_id" component={ Post } />
+        <ProtectedRoute path="/about" component={ About } />
+        <ProtectedRoute path="/contact" component={ Contact } />
+        <ProtectedRoute path="/post/:post_id" component={ Post } />
         <Route component={ PageNotFound } />
       </Switch>
     </Router>
