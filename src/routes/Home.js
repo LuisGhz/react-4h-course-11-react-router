@@ -17,7 +17,7 @@ const Home = () => {
         <Card key={ post.id } className="shadow p-3 mb-5 bg-white rounde">
           <Card.Body>
             <Card.Title>
-              <Link to={ `/${post.id}` } >{ post.title }</Link>
+              <Link to={ `/post/${post.id}` } >{ post.title }</Link>
             </Card.Title>
             <Card.Text>{post.body}</Card.Text>
           </Card.Body>
