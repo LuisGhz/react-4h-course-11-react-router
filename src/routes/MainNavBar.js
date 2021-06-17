@@ -13,14 +13,14 @@ const MainNavBar = props => {
   // }, []);
 
   const authHandler = () => {
-    if (auth.isAuthenticated()) {
-      auth.logout(() => {
-        props.history.push('/');
-      });
-    }
     if (!auth.isAuthenticated()) {
       auth.login(() => {
         props.history.push('/about');
+      });
+    } else {
+      auth.logout(() => {
+        console.log(auth.isAuthenticated())
+        props.history.push('/');
       });
     }
   }
