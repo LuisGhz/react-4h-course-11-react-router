@@ -4,12 +4,12 @@ import { Link, withRouter } from 'react-router-dom';
 
 const MainNavBar = props => {
   console.log(props);
-  useEffect(() => {
-    setTimeout(() => {
-      props.history.push('/about');
-    }, 2000);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     props.history.push('/about');
+  //   }, 2000);
+  // // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
   return (
     <div>
       <Navbar bg="dark" variant="dark" expand="lg">
